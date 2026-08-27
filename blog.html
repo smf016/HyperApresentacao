@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="HyperCore — computadores personalizados, hardware, periféricos e soluções de tecnologia.">
+    <title>HyperCore Lab | HyperCore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container"><span>⚡ Power at the Core.</span><span>Atendimento: seg–sex, 9h–18h</span></div>
+    </div>
+    <header class="navbar">
+        <div class="container nav"><a class="brand" href="index.html"><img src="assets/logo.png"
+                    alt="HyperCore"><span>HYPER<b>CORE</b></span></a><button class="iconbtn mobile-toggle"
+                onclick="document.querySelector('.navlinks').classList.toggle('mobile-open')">☰</button>
+            <nav class="navlinks"><a class="" href="index.html">Início</a><a class="" href="pcs.html">PCs Gamer</a><a
+                    class="" href="montar.html">Monte seu PC</a><a class="" href="hardware.html">Hardware</a><a class=""
+                    href="perifericos.html">Periféricos</a><a class="" href="upgrades.html">Upgrades</a><a class=""
+                    href="servicos.html">Serviços</a><a class="" href="sobre.html">Sobre</a></nav>
+            <div class="nav-actions">
+                <form id="global-search" class="search"><input class="input" style="padding:10px"
+                        placeholder="Pesquisar..." aria-label="Pesquisar"></form><a class="iconbtn"
+                    href="conta.html">👤</a><a class="iconbtn" href="carrinho.html">🛒 <span
+                        data-cart-count>0</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs">Início / HyperCore Lab</div>
+                <h1>HyperCore Lab</h1>
+                <p class="muted">Conteúdo para você entender melhor tecnologia.</p>
+            </div>
+        </section>
+        <section class="section" style="padding-top:15px">
+            <div class="container grid grid-3">
+                <article class="card"><span class="tag">Hardware</span>
+                    <h3>16 GB ou 32 GB de RAM?</h3>
+                    <p class="muted">Entenda quando mais memória realmente faz diferença.</p><button class="btn ghost"
+                        onclick="openModal('#article-modal')">Ler artigo</button>
+                </article>
+                <article class="card"><span class="tag">GPU</span>
+                    <h3>Como escolher uma placa de vídeo?</h3>
+                    <p class="muted">Veja os pontos que importam antes de comprar.</p><button class="btn ghost"
+                        onclick="openModal('#article-modal')">Ler artigo</button>
+                </article>
+                <article class="card"><span class="tag">PC</span>
+                    <h3>SSD NVMe vale a pena?</h3>
+                    <p class="muted">Entenda as diferenças entre armazenamento.</p><button class="btn ghost"
+                        onclick="openModal('#article-modal')">Ler artigo</button>
+                </article>
+            </div>
+        </section>
+        <div id="article-modal" class="modal">
+            <div class="modal-box">
+                <div class="modal-head">
+                    <h2>HyperCore Lab</h2><button class="iconbtn" onclick="closeModal('#article-modal')">✕</button>
+                </div>
+                <p class="muted">Este espaço pode receber artigos completos, comparativos, guias de compra e notícias da
+                    HyperCore.</p>
+                <div class="notice ok">Conteúdo demonstrativo do protótipo.</div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><a class="brand" href="index.html"><img src="assets/logo.png"
+                        alt="HyperCore"><span>HYPER<b>CORE</b></span></a>
+                <p class="muted">Computadores personalizados, hardware e soluções de tecnologia. Você não precisa
+                    entender de hardware. Nós entendemos por você.</p>
+            </div>
+            <div>
+                <h4>Produtos</h4><a href="pcs.html">PCs Gamer</a><a href="hardware.html">Hardware</a><a
+                    href="perifericos.html">Periféricos</a><a href="montar.html">Monte seu PC</a>
+            </div>
+            <div>
+                <h4>Serviços</h4><a href="upgrades.html">Upgrades</a><a href="servicos.html">Montagem e manutenção</a><a
+                    href="garantia.html">Garantia</a><a href="suporte.html">Suporte</a>
+            </div>
+            <div>
+                <h4>HyperCore</h4><a href="sobre.html">Sobre nós</a><a href="faq.html">FAQ</a><a
+                    href="blog.html">HyperCore Lab</a><a href="contato.html">Contato</a>
+            </div>
+        </div>
+        <div class="container copyright"><span>© 2026 HyperCore. Todos os direitos reservados.</span><span>POWER AT THE
+                CORE.</span></div>
+    </footer>
+    <div class="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
